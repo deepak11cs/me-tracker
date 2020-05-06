@@ -66,6 +66,13 @@
                     plat = position.coords.latitude;
                     plon = position.coords.longitude;
                     initMap();
+                    var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                    // Do whatever you want with userLatLng.
+                    var marker = new google.maps.Marker({
+                        position: userLatLng,
+                        title: 'Your Location',
+                        map: map
+                    });
                     acc = position.coords.accuracy;
                     x.innerHTML = "Time: "+ currentTimestamp.toLocaleTimeString() +", "+ currentTimestamp.toDateString()+ "<br>"+"Latitude: " + plat +"<br>Longitude: " + plon;
                 }
