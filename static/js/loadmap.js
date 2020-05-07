@@ -23,7 +23,7 @@ function showPosition(position) {
         plon = position.coords.longitude;
         //initMap();
         var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        // Do whatever you want with userLatLng.
+        
         var marker = new google.maps.Marker({
             position: userLatLng,
             title: "Time: "+ currentTimestamp.toLocaleTimeString() +", "+ currentTimestamp.toDateString(),
@@ -39,7 +39,7 @@ function showPosition(position) {
         //initMap();
         acc = position.coords.accuracy;
         var userLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        // Do whatever you want with userLatLng.
+        
         var marker = new google.maps.Marker({
             position: userLatLng,
             title: "Time: "+ currentTimestamp.toLocaleTimeString() +", "+ currentTimestamp.toDateString(),
